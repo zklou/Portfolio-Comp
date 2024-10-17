@@ -2,11 +2,14 @@
   "name": "portfolio-next",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zklou.github.io/Portfolio/",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+    
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
