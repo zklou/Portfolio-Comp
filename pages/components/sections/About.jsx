@@ -34,13 +34,13 @@ const About = () => {
     return (
         <div className='bg-[#000] text-white'>
             <div className='w-2/3 m-auto border-0 border-red-500 md:text-sm sm1:text-xs fontwt'>
-                <div className='border-0 border-red-500 xl:w-1/5 sm1:w-4/5 md:w-2/5'>Available for freelance & remote jobs/internships after</div>
-                <div className='mt-2 font-bold text-blue-400 border-0 border-red-500 sm1:text-sm md:text-lg'>{formattedDate}</div>
+                <div className='border-0 border-red-500 xl:w-1/5 sm1:w-4/5 md:w-2/5'>Available for full time & remote jobs/internships after</div>
+                <div className='mt-2 font-bold text-blue-400 border-0 border-red-500 sm1:text-sm md:text-lg'>{formattedDate} Today</div>
             </div>
-            <motion.div 
+            <motion.div
                 className="font-extrabold leading-[4rem] tracking-tighter text-10xl text-white mt-10 whitespace-nowrap uppercase"
                 style={{ x: toRight }}
-            >   
+            >
                 <span className='font-mine sm1:text-7xl md:text-10xl'>
                     <span>about </span>
                     <span className="font-stencil-scroll">about </span>
@@ -48,7 +48,7 @@ const About = () => {
                     <span className="font-stencil-scroll">about </span>
                 </span>
             </motion.div>
-            <motion.div 
+            <motion.div
                 style={{ x: toLeft }}
                 className="relative z-20 font-extrabold tracking-tighter text-white uppercase md:-mt-10 text-10xl whitespace-nowrap sm1:-mt-4"
             >
@@ -59,7 +59,7 @@ const About = () => {
                     <span className="font-stencil-scroll">myself </span>
                 </span>
             </motion.div>
-            <motion.div 
+            <motion.div
                 className={`relative z-10 sm1:w-10/12 md:w-2/3 m-auto md:-mt-24 sm1:-mt-16 border-0 border-red-500`}
                 style={{ y: toUp }}
                 variants={boxVariants}
@@ -76,7 +76,7 @@ const About = () => {
                     />
                 </div>
             </motion.div>
-            <motion.div 
+            <motion.div
                 style={{ y: toUp }}
                 className='w-2/3 m-auto border-0 border-red-500 md:mt-20 sm1:mt-10'
             >
@@ -95,15 +95,26 @@ const About = () => {
                 <div className='relative z-10 m-auto border-0 border-red-500 md:grid sm1:hidden md:grid-cols-2 xl:w-3/5 mt-28 sm1:w-2/3 md:w-3/4'>
                     <div className='font-bold text-blue-400 border-0 border-red-500 xl:text-center sm1:text-left'>Background</div>
                     <div className='border-0 border-red-500 sm1:w-full md:text-sm sm1:mt-2 md:mt-0 sm1:text-xs xl:w-3/4'>
-                        <div>I have recently completed my Bachelor's degree in Computer Science from York University, Toronto, and am pursuing my Master's degree at Georgia Institute of Technology. I have experience working as a full stack developer, contributing to projects involving React, Spring Cloud, AWS, and more.</div>
+                        <div>I have recently completed my Bachelor&apos;s degree in Computer Science from York University, Toronto, and am pursuing my Master&apos;s degree at Georgia Institute of Technology. I have experience working as a full stack developer, contributing to projects involving React, Spring Cloud, AWS, and more.</div>
                         <div className='md:mt-12 sm1:mt-4'>In my professional experience, I have developed over 25 APIs, implemented efficient front-end systems, and optimized backend services for startups and companies like Yongtai Quanwei Decor Ltd. I focus on creating scalable and reliable systems for online services and web applications.</div>
                     </div>
                 </div>
             </div>
             <div className='lg:pb-80'>
-                <Scroll />      
+                <Scroll />
             </div>
         </div>
     )
 }
 export default About
+
+// 97 de Background
+/*
+<div className='relative z-10 m-auto border-0 border-red-500 md:grid sm1:hidden md:grid-cols-2 xl:w-3/5 mt-28 sm1:w-2/3 md:w-3/4'>
+                    <div className='font-bold text-blue-400 border-0 border-red-500 xl:text-center sm1:text-left'>Background</div>
+                    <div className='border-0 border-red-500 sm1:w-full md:text-sm sm1:mt-2 md:mt-0 sm1:text-xs xl:w-3/4'>
+                        <div>I have recently completed my Bachelor&apos;s degree in Computer Science from York University, Toronto, and am pursuing my Master&apos;s degree at Georgia Institute of Technology. I have experience working as a full stack developer, contributing to projects involving React, Spring Cloud, AWS, and more.</div>
+                        <div className='md:mt-12 sm1:mt-4'>In my professional experience, I have developed over 25 APIs, implemented efficient front-end systems, and optimized backend services for startups and companies like Yongtai Quanwei Decor Ltd. I focus on creating scalable and reliable systems for online services and web applications.</div>
+                    </div>
+                </div>
+                */
