@@ -108,7 +108,6 @@ const ContactNew = () => {
                                         <label className='flex flex-row text-white'><span className='mt-0 font-normal sm1:text-lg md:text-2xl lg:text-xl'>What&apos;s your email ?</span></label>
                                         <input type='email' placeholder='Enter your email address' value={email} onChange={ (e) => setEmail(e.target.value) } required className='p-2 text-white bg-transparent pl-0 focus:pl-2 border-b-[0.01rem] border-blue-400 focus:ring focus:rounded-xl focus:border-blue-400 focus:outline-none md:w-full lg:w-full'></input>
                                     </div>
-                                   ```javascript
                                     <div className='flex flex-col space-y-0 xl:space-y-2'>
                                         <label className='flex flex-row text-white'><span className='mt-0 font-normal sm1:text-md md:text-2xl lg:text-xl'>Type in your message</span></label>
                                         <textarea type='name' placeholder='Enter your message' value={message} onChange={ (e) => setMessage(e.target.value) } required className='p-2 text-white bg-transparent pl-0 focus:pl-2 border-b-[0.01rem] border-blue-400 focus:ring focus:rounded-xl focus:border-blue-400 focus:outline-none md:w-full lg:w-full'></textarea>
