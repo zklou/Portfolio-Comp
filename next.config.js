@@ -6,8 +6,10 @@ const nextConfig = {
 
 // next.config.js
 module.exports = {
-  output: 'export',
+  output: 'export', // 生成静态导出
+  basePath: '/portfolio', // 使用 GitHub Pages 子路径
+  assetPrefix: '/portfolio', // 静态资源前缀
   images: {
-    unoptimized: true,
+    unoptimized: true, // 禁用图像优化
   },
 };
