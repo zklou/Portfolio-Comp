@@ -1,10 +1,15 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic'; // 动态导入
 import '../styles/globals.css';
 import { Noto_Sans } from 'next/font/google'; 
 import { motion } from 'framer-motion';
 import Layout from './components/layout/Layout';
-import Loader from './components/layout/Loader';
+
+// 动态导入 Loader 组件，禁用 SSR（假设 Loader 中使用了 lottie-web）
+const Loader = dynamic(() => import('./components/layout/Loader'), {
+  ssr: false,
+});
 
 const notoSans = Noto_Sans({
   weight: ['300', '400', '500', '600', '700', '800', '900'],
