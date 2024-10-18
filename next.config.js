@@ -7,6 +7,7 @@ const nextConfig = {
 // next.config.js
 module.exports = {
   output: 'export', // 使用静态导出
+  basePath: '/favorites',
   //basePath: '/Portfolio-Comp', // 项目在 GitHub Pages 上的子路径
   //assetPrefix: '/Portfolio-Comp', // 确保静态资源路径前缀与 basePath 一致
   images: {
