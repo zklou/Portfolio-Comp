@@ -4,9 +4,10 @@
   "private": true,
   "homepage": "https://zklou.github.io/Portfolio/",
   "scripts": {
-    "deploy": "gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
+    "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "next lint",
     "test": "jest"
