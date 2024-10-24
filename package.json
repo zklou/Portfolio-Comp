@@ -2,7 +2,7 @@
   "name": "portfolio-next",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zklou.github.io/Portfolio/",
+  "homepage": "https://zklou.github.io/Portfolio-Comp/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
